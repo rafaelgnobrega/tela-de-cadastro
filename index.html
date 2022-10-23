@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="img/logo.svg" alt="Logo Blue Bird Seguros">
+        </div>
+        <div class="cadastro">
+            <div class="containt">
+                <h1>Sign up</h1>
+                <form action="" method="post" id="register">
+                    <div class="half-box">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="your name" data-min-length="3" required>
+                        </div>
+                        <div>
+                            <label for="lastname">Last name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="your last name" required>
+                        </div>
+                    </div>
+                    <div class="full-box">
+                        <label for="phone">Phone</label>
+                        <input type="num" name="phone" id="phone" placeholder="type your phone number" required>
+                    </div>
+                    <div class="full-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" autocomplete="email" name="email" id="email" placeholder="type your e-mail" required>
+                    </div>
+                    <div class="full-box">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" pattern="[0-9a-fA-F]{4,8}" title="Digite sua senha, mínimo 4 e máximo 8 caracteres" placeholder="type your password" required>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <label class="terms" for="agreement">I have read and accept the <a href="#">terms of use</a></label>
+                    </div>
+                    <div class="full-box">
+                        <input type="submit" id="btn-submit" value="Register">
+                    </div>
+                    <p class="error--validation template"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
